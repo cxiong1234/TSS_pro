@@ -44,4 +44,3 @@ Consecutive sampling:
 ## Reference
 Please refer to ChemRxiv:
 
-[Go to Top](#Abstract)
