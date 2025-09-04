@@ -29,26 +29,19 @@ The code was running in the Ubuntu 22.04.5 LTS with the Nvidia A100-SXM4-80GB, p
    pip install pyrosetta-installer
    python -c 'import pyrosetta_installer; pyrosetta_installer.install_pyrosetta()'
    ```
-## Quick start
+## Demo
+Training The model:
+   ```
+   python training.py --tensor_file=<PATH_TO_YOUR_PT_TRAINING_FILE> --batch-size=128
+   ```
 
-### Note
-
-Our python package name is currently tsdart.
-
-### Start with jupyter notebook
-
-Check these two files for the demo:
-
-```
-./ts-dar/example/muller-example.ipynb
-```
-
-```
-./ts-dar/example/quadruple-well-example.ipynb
-```
+Consecutive sampling:
+   ```
+   python long_traj_cond_sample.py --ckpt==<PATH_TO_YOUR_CKPT_CHECKPOINT_FILE> --max_sampling_cycle=1000 --ref-path=<PATH_TO_YOUR_REF_FRAME>
+   ```
 
 
 ## Reference
-
+Please refer to ChemRxiv:
 
 [Go to Top](#Abstract)
