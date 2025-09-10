@@ -90,7 +90,7 @@ def main():
     mu_ref = torch.tensor(args.mu_ref, dtype=torch.float32)  # shape (6,)
     mu_ref = mu_ref.view(1, 1, 6).expand(1, args.num_residues, 6)  # shape (1, 76, 6)
     
-    reference = torch.from_numpy(np.nan_to_num(np.load(args.ref_path)[30003])).float()  if args.continueCycle == None else torch.load(os.path.join(save_dir, f"condition_{args.continueCycle}.pt")) ## (537, 6)
+    reference = torch.from_numpy(np.nan_to_num(np.load(args.ref_path))).float()  if args.continueCycle == None else torch.load(os.path.join(save_dir, f"condition_{args.continueCycle}.pt")) ## (537, 6)
     prev_last_frame = None
     
     if not args.continueCycle:

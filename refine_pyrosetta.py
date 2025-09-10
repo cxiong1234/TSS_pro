@@ -36,4 +36,4 @@ def refine_conformations(pdb_file,refine_pdb_file):
     fast_relax.apply(pose)
     pose.dump_pdb(f'{refine_pdb_file}')
 
-refine_conformations(os.path.join(dir,"pred_struct.pdb"), os.path.join(dir, "refined.pdb"))
+# refine_conformations(os.path.join(dir,"pred_struct.pdb"), os.path.join(dir, "refined.pdb"))
