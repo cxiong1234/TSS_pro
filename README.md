@@ -23,12 +23,12 @@ The code was running in the Ubuntu 22.04.5 LTS with the Nvidia A100-SXM4-80GB, p
 ## Demo
 Training The model:
    ```
-   python training.py --tensor_file=<PATH_TO_YOUR_PT_TRAINING_FILE> --batch-size=128
+   python training.py --tensor_file=./demoInput/conditioned_traj_dataset_5snapshots_wrapped.pt --batch-size=100 
    ```
 
 Consecutive sampling:
    ```
-   python long_traj_cond_sample.py --ckpt==<PATH_TO_YOUR_CKPT_CHECKPOINT_FILE> --max_sampling_cycle=1000 --ref-path=<PATH_TO_YOUR_REF_FRAME>
+   python long_traj_cond_sample.py --ckpt=./demoInput/ubiquitin_5step.ckpt --max_sampling_cycle=1000 --ref-path=./demoInput/combined_abs_angle.npy
    ```
 
 
