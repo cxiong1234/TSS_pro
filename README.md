@@ -26,7 +26,7 @@ Training The model:
    python training.py --tensor_file=<your training data .pt tensorfile> --batch-size=100 
    ```
 
-Consecutive sampling (before sample, download our .ckpt model file in the zenodo: https://zenodo.org/records/17064407):
+Consecutive sampling (before sample, download our ubiquitin_5step.ckpt model file in the zenodo: https://zenodo.org/records/17064407):
    ```
    python long_traj_cond_sample.py --ckpt=./demoInput/ubiquitin_5step.ckpt --max_sampling_cycle=1000 --ref-path=./demoInput/ref.npy
    ```
