@@ -21,7 +21,7 @@ The code was running in the Ubuntu 22.04.5 LTS with the Nvidia A100-SXM4-80GB, p
    python -c 'import pyrosetta_installer; pyrosetta_installer.install_pyrosetta()'
    ```
 ## Demo
-Training The model:
+Training The model (for demo training data `conditioned_traj_dataset_5snapshots_wrapped.pt`, please  download from google drive https://drive.google.com/file/d/1uAUwlbuW4GeOLCWwT2vvxmWUoxOW5P02/view?usp=sharing):
    ```
    python training.py --tensor_file=<your training data .pt tensorfile> --batch-size=100 
    ```
