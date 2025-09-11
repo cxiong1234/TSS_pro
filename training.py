@@ -76,7 +76,7 @@ def get_meta_data(tensor_file):
 def parse_arguments(args_list):
     parser = argparse.ArgumentParser()
     parser.add_argument("--meta", type=str, default="meta.csv")
-    parser.add_argument("--tensor_file", type=str, default="/work/projects/ptao/ML_Protein_Dynamics/prodyna_ml/membersdata/chuanyexiong/project2_traj_generation/ubiquitin/real_data/50000frame_stride1000/data/conditioned_traj_dataset_5snapshots_wrapped.pt")
+    parser.add_argument("--tensor_file", type=str, default="")
     parser.add_argument("--batch-size", type=int, default=100)
     parser.add_argument("--timesteps", type=int, default=1000)
     return parser.parse_args(args_list) if args_list else parser.parse_args()
